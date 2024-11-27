@@ -14,10 +14,10 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("prefix") ||
-     react.includes("Virat") || 
+     react.includes("deepak") || 
 react.includes("owner")) {
 		var msg = {
-				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆 ★ fecebook https://www.facebook.com/profile.php?id=100030585286077`",
+				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆 ★ facebook https://www.facebook.com/profile.php?id=100091292318438&mibextid=ZbWKwL"
 				attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
